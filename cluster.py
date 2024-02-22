@@ -42,10 +42,10 @@ class cluster:
                 new_centroids[i] = np.mean(cluster, axis=0).tolist()
             
             # checking for convergence
-            if np.array_equal(centroids, new_centroids):
-                break
-            else:
-                centroids = new_centroids
+            # if np.array_equal(centroids, new_centroids):
+            #     break
+            # else:
+            #     centroids = new_centroids
 
         return clusters, centroids
 
